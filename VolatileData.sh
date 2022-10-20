@@ -62,6 +62,7 @@ lsof | awk '{print $1, $NF}' | grep -E "^nc"
 echo
 echo open unlinked files 
 find /etc/passwd
+find /etc/shadow
 lsof +L1
 echo
 echo file modded in 24hrs
