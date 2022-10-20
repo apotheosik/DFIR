@@ -49,6 +49,7 @@ echo users with root or UID is 0
 grep 'x:0:' /etc/passwd
 echo
 echo root SUID files
+echo /etc/passwd
 find /-uid 0 -perm -4000 2>/dev/null
 #or find / -perm -04000
 echo
