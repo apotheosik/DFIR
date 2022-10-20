@@ -63,6 +63,7 @@ echo
 echo open unlinked files 
 find /etc/passwd
 find /etc/shadow
+echo /etc/passwd
 lsof +L1
 echo
 echo file modded in 24hrs
